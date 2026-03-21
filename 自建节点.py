@@ -24,6 +24,19 @@ apt update -y  && apt install -y curl
 
 curl -sS -O https://kejilion.pro/kejilion.sh && chmod +x kejilion.sh && ./kejilion.sh
 
+甬哥Sing-box-yg精装桶小白专享一键五协议共存脚本（VPS专用）
+支持人气最高的五大协议：Vless-reality-vision、Vmess-ws(tls)/Argo、Hysteria-2、Tuic-v5、Anytls
+
+支持纯IPV6、纯IPV4、双栈VPS，支持amd与arm架构，支持alpine系统，推荐使用最新的Ubuntu系统
+
+小白简单模式：无需域名证书，回车三次就安装完成，复制、扫描你要的节点配置
+
+bash <(wget -qO- https://raw.githubusercontent.com/yonggekkk/sing-box-yg/main/sb.sh)
+
+
+
+
+
 
 GitHub版一键脚本 部分小伙伴会遇到官网版出现大段乱码！就用GitHub版本吧！
 
