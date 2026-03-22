@@ -79,8 +79,8 @@ ufw disable
 
 80,443,8080,8880,2052,2082,2086,2095,2053,2083,2087,2096,8443
 
-
-
+优选域名：
+for d in d3agakyjgjv5i8.cloudfront.net d2c.aws.amazon.com location-services-prd.tesla.com j.6sc.co iosapps.itunes.apple.com cdn.bizible.com rum.hlx.page www.sony.com c.6sc.co logx.optimizely.com ; do t1=$(date +%s%3N); timeout 1 openssl s_client -connect $d:443 -servername $d </dev/null &>/dev/null && t2=$(date +%s%3N) && echo "$d: $((t2 - t1)) ms" || echo "$d: timeout"; done
 
 
 
