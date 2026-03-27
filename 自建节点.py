@@ -33,7 +33,16 @@ curl -sS -O https://kejilion.pro/kejilion.sh && chmod +x kejilion.sh && ./kejili
 
 bash <(wget -qO- https://raw.githubusercontent.com/yonggekkk/sing-box-yg/main/sb.sh)
 
+放行端口
+for port in 443 8443 58888 48888 58443; do
+    iptables -A INPUT -p tcp --dport $port -j ACCEPT
+    iptables -A INPUT -p udp --dport $port -j ACCEPT
+    echo "✅ 已放行 TCP+UDP 端口: $port"
+done
 
+iptables-restore < /etc/iptables/rules.v4
+# 查看保存的规则
+cat /etc/iptables/rules.v4
 
 
 
